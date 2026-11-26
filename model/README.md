@@ -1,3 +1,5 @@
+> 2026.11.26 수정: DCF의 성숙기 재투자율 g/ROIC를 코드와 엑셀에 반영했습니다. 목표주가와 투자의견은 검토 중이며 PER·RIM도 가정 검증이 필요합니다.
+
 # [모델 파일]
 
 `HD_Hyundai_Electric_Equity_Research_Model.xlsx`에는 Actuals, Forecast, DCF, RIM, PER, Sources 시트가 있다. 금액은 KRW 십억원이며, 주당가치는 원이다.

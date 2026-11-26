@@ -30,7 +30,11 @@ net_cash = 648.574
 nci = 4.028
 fcff = [row["fcff"] for row in forecast[1:]]
 pv_fcff = sum(value / (1 + wacc) ** index for index, value in enumerate(fcff, start=1))
-tv = fcff[-1] * (1 + g) / (wacc - g)
+# Terminal NOPAT reinvests g/ROIC; ROIC is an analyst assumption, not a company forecast.
+terminal_roic = 0.14
+terminal_nopat = forecast[-1]["ebit"] * (1 - forecast[-1]["tax_rate"])
+terminal_fcff = terminal_nopat * (1 + g) * (1 - g / terminal_roic)
+tv = terminal_fcff / (wacc - g)
 pv_tv = tv / (1 + wacc) ** len(fcff)
 ev = pv_fcff + pv_tv
 dcf_equity = ev + net_cash - nci
@@ -81,6 +85,9 @@ values = {
         "method": "FCFF DCF: power-equipment operating cash flow, separately bridged net cash",
         "wacc": wacc,
         "terminal_growth": g,
+        "terminal_reinvestment_roic": terminal_roic,
+        "terminal_nopat_2031": round(terminal_nopat, 4),
+        "terminal_fcff_2032": round(terminal_fcff, 4),
         "pv_explicit_fcff": round(pv_fcff, 1),
         "pv_terminal_value": round(pv_tv, 1),
         "enterprise_value": round(ev, 1),
@@ -105,9 +112,9 @@ values = {
         "equity_value": round(rim_equity, 1),
         "price": round(rim_price),
     },
-    "target_price": 355000,
-    "rating": "SELL",
-    "downside": round(1 - 355000 / 400000, 4),
+    "target_price": None,
+    "rating": "under review",
+    "downside": None,
 }
 
 with (MODEL / "forecast.csv").open("w", newline="", encoding="utf-8") as f:
