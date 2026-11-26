@@ -1,0 +1,45 @@
+{
+  "analysis_date": "2026-11-24",
+  "unit": "KRW billion except per-share values and percentages",
+  "reference_price": 400000,
+  "economic_shares_million": 35.99,
+  "actuals_cutoff": "2026 Q3 earnings and 2026 Q3 quarterly report",
+  "forecast_status": "Analyst inputs; not company guidance",
+  "forecast": {
+    "2026": {"revenue": 4650.0, "operating_margin": 0.246, "capex": 350.0},
+    "2027": {"revenue": 5185.0, "operating_margin": 0.246, "capex": 400.0, "working_capital_increase": 150.0},
+    "2028": {"revenue": 5630.0, "operating_margin": 0.240, "capex": 410.0, "working_capital_increase": 140.0},
+    "2029": {"revenue": 6011.0, "operating_margin": 0.234, "capex": 360.0, "working_capital_increase": 130.0},
+    "2030": {"revenue": 6342.0, "operating_margin": 0.228, "capex": 330.0, "working_capital_increase": 120.0},
+    "2031": {"revenue": 6627.0, "operating_margin": 0.220, "capex": 330.0, "working_capital_increase": 110.0}
+  },
+  "dcf": {
+    "tax_rate": 0.24,
+    "wacc": 0.09,
+    "terminal_growth": 0.022,
+    "mature_reinvestment_roic": 0.14,
+    "net_cash": 648.6,
+    "non_controlling_interest": 4.0
+  },
+  "per": {
+    "normalized_eps": 25000,
+    "applied_per": 14.2,
+    "growth_period_eps_growth": 0.07,
+    "incremental_roe": 0.18,
+    "terminal_roe": 0.15
+  },
+  "rim": {
+    "begin_controlling_equity_2026": 2550.0,
+    "cost_of_equity": 0.105,
+    "payout_ratio": 0.50,
+    "terminal_roe": 0.15
+  },
+  "review_triggers": [
+    "수주잔고의 지역·제품별 구성과 납기",
+    "북미 패키지 장기계약의 확정 조건",
+    "청주 배전캠퍼스 2단계의 집행액과 양산 시점",
+    "전력변압기·GIS의 수주 시점별 이익률",
+    "계약자산, 재고, 선수금 및 매출채권의 증감",
+    "자사주·배당과 경제적 주식 수"
+  ]
+}

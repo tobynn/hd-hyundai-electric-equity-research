@@ -1,0 +1,37 @@
+{
+  "unit": "KRW billion except per-share values",
+  "reference_price": 400000,
+  "reference_date": "2026-11-24",
+  "economic_shares_million": 35.99,
+  "DCF": {
+    "method": "FCFF DCF: power-equipment operating cash flow, separately bridged net cash",
+    "wacc": 0.09,
+    "terminal_growth": 0.022,
+    "pv_explicit_fcff": 2963.7,
+    "pv_terminal_value": 9162.8,
+    "enterprise_value": 12126.5,
+    "net_cash": 648.574,
+    "non_controlling_interest": 4.028,
+    "equity_value": 12771.0,
+    "price": 354849
+  },
+  "PER": {
+    "method": "normalized-EPS cross-check; observed peer average not used",
+    "normal_eps": 25000.0,
+    "applied_per": 14.2,
+    "price": 355000
+  },
+  "RIM": {
+    "method": "controlling equity with normalized residual-income path",
+    "begin_book_2026": 2550.0,
+    "cost_of_equity": 0.105,
+    "terminal_roe": 0.15,
+    "pv_explicit_ri": 2190.0,
+    "pv_terminal_ri": 1615.9,
+    "equity_value": 6355.9,
+    "price": 176602
+  },
+  "target_price": 355000,
+  "rating": "SELL",
+  "downside": 0.1125
+}
