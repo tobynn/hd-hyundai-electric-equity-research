@@ -1,8 +1,8 @@
 {
-  "status": "illustrative; EPS is at t0 and first forecast dividend is at t1, not a peer-derived multiple",
-  "eps_t0": 25000.0,
+  "status": "illustrative as of 2026 year-end; EPS is 2027E t1; not a peer-derived multiple",
+  "eps_2027e_t1": 25000.0,
   "cost_of_equity": 0.105,
-  "growth_first_five_years": 0.07,
+  "growth_2028_through_2031": 0.07,
   "incremental_roe": 0.18,
   "growth_retention": 0.38888888888888895,
   "terminal_growth": 0.022,
@@ -11,37 +11,37 @@
   "forecast": [
     {
       "period": 1,
-      "eps": 26750.0,
-      "dividend": 16347.22222222222,
-      "pv_dividend": 14793.866264454498
+      "eps": 25000.0,
+      "dividend": 15277.777777777776,
+      "pv_dividend": 13826.043237807942
     },
     {
       "period": 2,
-      "eps": 28622.5,
-      "dividend": 17491.527777777777,
-      "pv_dividend": 14325.282265127886
+      "eps": 26750.0,
+      "dividend": 16347.22222222222,
+      "pv_dividend": 13388.114266474659
     },
     {
       "period": 3,
-      "eps": 30626.075000000004,
-      "dividend": 18715.934722222224,
-      "pv_dividend": 13871.540292929267
+      "eps": 28622.5,
+      "dividend": 17491.527777777777,
+      "pv_dividend": 12964.056348532024
     },
     {
       "period": 4,
-      "eps": 32769.900250000006,
-      "dividend": 20026.050152777778,
-      "pv_dividend": 13432.170238402095
+      "eps": 30626.075000000004,
+      "dividend": 18715.934722222224,
+      "pv_dividend": 12553.430129347753
     },
     {
       "period": 5,
-      "eps": 35063.79326750001,
-      "dividend": 21427.873663472226,
-      "pv_dividend": 13006.71688243461
+      "eps": 32769.900250000006,
+      "dividend": 20026.050152777778,
+      "pv_dividend": 12155.810170499633
     }
   ],
-  "pv_terminal": 223634.6123582782,
-  "value_per_share": 293064.18830162653,
-  "justified_per": 11.722567532065062,
-  "note": "Growth, return on incremental equity and clean surplus are assumptions; DCF and RIM may use incompatible EPS timing. No fair target implied."
+  "pv_terminal": 209004.3106152132,
+  "value_per_share": 273891.7647678752,
+  "justified_forward_per": 10.955670590715007,
+  "note": "EPS levels start in 2027 like DCF/RIM. Subsequent EPS, payout and returns differ from RIM assumptions; clean surplus requires reconciliation. No fair target implied."
 }

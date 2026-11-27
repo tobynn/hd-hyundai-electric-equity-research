@@ -48,8 +48,8 @@ per_terminal_growth = 0.022
 per_terminal_roe = 0.15
 per_payout = 1 - per_growth / per_incremental_roe
 per_terminal_payout = 1 - per_terminal_growth / per_terminal_roe
-per_pv_dividends = sum((1 + per_growth)**i * per_payout / (1 + per_cost)**i for i in range(1, 6))
-per_pv_terminal = (1 + per_growth)**5 * (1 + per_terminal_growth) * per_terminal_payout / (per_cost - per_terminal_growth) / (1 + per_cost)**5
+per_pv_dividends = sum((1 + per_growth)**(i-1) * per_payout / (1 + per_cost)**i for i in range(1, 6))
+per_pv_terminal = (1 + per_growth)**4 * (1 + per_terminal_growth) * per_terminal_payout / (per_cost - per_terminal_growth) / (1 + per_cost)**5
 applied_per = per_pv_dividends + per_pv_terminal
 per_price = normal_eps * applied_per
 
@@ -106,7 +106,7 @@ values = {
         "price": round(dcf_price),
     },
     "PER": {
-        "method": "two-stage payout model; EPS is t0, first dividend is t1; observed peer average not used; timing differs from other models",
+        "method": "two-stage payout model as of 2026 year-end; EPS is 2027E t1; observed peer average not used",
         "normal_eps": normal_eps,
         "applied_per": round(applied_per, 6),
         "price": round(per_price),
