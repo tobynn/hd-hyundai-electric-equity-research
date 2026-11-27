@@ -19,10 +19,10 @@
     "price": 353731
   },
   "PER": {
-    "method": "normalized-EPS cross-check; observed peer average not used",
+    "method": "two-stage payout model; EPS is t0, first dividend is t1; observed peer average not used; timing differs from other models",
     "normal_eps": 25000.0,
-    "applied_per": 14.2,
-    "price": 355000
+    "applied_per": 11.722568,
+    "price": 293064
   },
   "RIM": {
     "method": "controlling equity with normalized residual-income path",

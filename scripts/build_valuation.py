@@ -41,7 +41,16 @@ dcf_equity = ev + net_cash - nci
 dcf_price = dcf_equity * 1_000_000_000 / (shares_m * 1_000_000)
 
 normal_eps = 25_000.0
-applied_per = 14.2
+per_cost = 0.105
+per_growth = 0.07
+per_incremental_roe = 0.18
+per_terminal_growth = 0.022
+per_terminal_roe = 0.15
+per_payout = 1 - per_growth / per_incremental_roe
+per_terminal_payout = 1 - per_terminal_growth / per_terminal_roe
+per_pv_dividends = sum((1 + per_growth)**i * per_payout / (1 + per_cost)**i for i in range(1, 6))
+per_pv_terminal = (1 + per_growth)**5 * (1 + per_terminal_growth) * per_terminal_payout / (per_cost - per_terminal_growth) / (1 + per_cost)**5
+applied_per = per_pv_dividends + per_pv_terminal
 per_price = normal_eps * applied_per
 
 # RIM은 2026년 말 예상 지배주주자본에서 시작한다. 2027~2031년 순이익은
@@ -97,9 +106,9 @@ values = {
         "price": round(dcf_price),
     },
     "PER": {
-        "method": "normalized-EPS cross-check; observed peer average not used",
+        "method": "two-stage payout model; EPS is t0, first dividend is t1; observed peer average not used; timing differs from other models",
         "normal_eps": normal_eps,
-        "applied_per": applied_per,
+        "applied_per": round(applied_per, 6),
         "price": round(per_price),
     },
     "RIM": {
