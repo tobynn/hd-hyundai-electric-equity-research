@@ -134,6 +134,6 @@ with (MODEL / "rim_schedule.csv").open("w", newline="", encoding="utf-8") as f:
     writer = csv.DictWriter(f, fieldnames=rim_rows[0].keys())
     writer.writeheader()
     writer.writerows(rim_rows)
-with (MODEL / "valuation_results.json").open("w", encoding="utf-8") as f:
+with (MODEL / "valuation_results_legacy_20261126.json").open("w", encoding="utf-8") as f:
     json.dump(values, f, ensure_ascii=False, indent=2)
 print(json.dumps(values, ensure_ascii=False, indent=2))

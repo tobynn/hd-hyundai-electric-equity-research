@@ -1,0 +1,152 @@
+{
+  "status": "research scenarios; forecasts and peer weights are judgements; no mechanically confirmed target",
+  "date_price": "2026-11-26",
+  "valuation_date": "2026-12-31 estimated",
+  "units": "KRW bn except per-share figures",
+  "price": 389500,
+  "shares": 35992704,
+  "cost_of_equity": 0.105,
+  "debt_weight": 0.15,
+  "debt_cost_pretax": 0.05,
+  "wacc": 0.09494999999999999,
+  "tax": 0.24,
+  "growth": 0.022,
+  "terminal_roic": 0.14,
+  "terminal_roe": 0.15,
+  "q4_bridge": {
+    "book_q3": 2305.516,
+    "q4_income_estimate": 302.048,
+    "dividend_declared": 46.7905152,
+    "book_2026e": 2560.7734848000005,
+    "cash_q3": 648.574,
+    "q4_ebit": 314.10300000000007,
+    "q4_da": 45.0,
+    "q4_capex": 97.44200000000001,
+    "q4_nwc": 30.0,
+    "q4_fcff": 156.27628000000004,
+    "cash_2026e": 758.0597648,
+    "other_cash_flows_assumed_zero": true
+  },
+  "forecast": [
+    {
+      "year": 2027,
+      "revenue": 5185,
+      "margin": 0.246,
+      "ebit": 1275.51,
+      "nopat": 969.3876,
+      "da": 155,
+      "capex": 400,
+      "nwc": 150,
+      "fcff": 574.3876,
+      "opening_equity": 2560.7734848000005,
+      "net_income": 899.9368000000001,
+      "dividend": 449.96840000000003,
+      "residual_income": 631.0555840960001,
+      "closing_equity": 3010.7418848
+    },
+    {
+      "year": 2028,
+      "revenue": 5630,
+      "margin": 0.24,
+      "ebit": 1351.2,
+      "nopat": 1026.912,
+      "da": 195,
+      "capex": 410,
+      "nwc": 140,
+      "fcff": 671.912,
+      "opening_equity": 3010.7418848,
+      "net_income": 957.4612000000001,
+      "dividend": 478.73060000000004,
+      "residual_income": 641.3333020960001,
+      "closing_equity": 3489.4724848000005
+    },
+    {
+      "year": 2029,
+      "revenue": 6011,
+      "margin": 0.234,
+      "ebit": 1406.574,
+      "nopat": 1068.9962400000002,
+      "da": 230,
+      "capex": 360,
+      "nwc": 130,
+      "fcff": 808.9962400000002,
+      "opening_equity": 3489.4724848000005,
+      "net_income": 999.5454400000002,
+      "dividend": 499.7727200000001,
+      "residual_income": 633.1508290960002,
+      "closing_equity": 3989.2452048000005
+    },
+    {
+      "year": 2030,
+      "revenue": 6342,
+      "margin": 0.228,
+      "ebit": 1445.976,
+      "nopat": 1098.9417600000002,
+      "da": 250,
+      "capex": 330,
+      "nwc": 120,
+      "fcff": 898.9417600000002,
+      "opening_equity": 3989.2452048000005,
+      "net_income": 1029.49096,
+      "dividend": 514.74548,
+      "residual_income": 610.6202134960001,
+      "closing_equity": 4503.990684800001
+    },
+    {
+      "year": 2031,
+      "revenue": 6627,
+      "margin": 0.22,
+      "ebit": 1457.94,
+      "nopat": 1108.0344,
+      "da": 270,
+      "capex": 330,
+      "nwc": 110,
+      "fcff": 938.0344,
+      "opening_equity": 4503.990684800001,
+      "net_income": 1038.5836,
+      "dividend": 519.2918,
+      "residual_income": 565.6645780959998,
+      "closing_equity": 5023.282484800001
+    }
+  ],
+  "dcf": {
+    "pv_fcff": 2922.667975375499,
+    "pv_terminal": 8313.068809059934,
+    "nci": 4.028,
+    "equity": 11989.768549235434,
+    "price": 333116.63800628687
+  },
+  "rim": {
+    "equity": 6532.440021694654,
+    "price": 181493.4499418175,
+    "ddm_equity": 6532.440021694654,
+    "terminal_dividend_payout": 0.8533333333333333,
+    "terminal_ni": 753.4923727200002
+  },
+  "per": {
+    "own_2027_eps": 25003.311782298995,
+    "peer_2027": [
+      {
+        "name": "효성중공업",
+        "price_20261126": 1613000,
+        "eps_2027_broker": 127970,
+        "broker_date": "2026-11-02",
+        "source": "https://file.alphasquare.co.kr/media/pdfs/company-report/_%ED%9A%A8%EC%84%B1%EC%A4%91%EA%B3%B5%EC%97%85_3Q26%20Review_261102%E2%98%86_%EC%84%B1%EC%A2%85%ED%99%94_2135_Online%20report%20_%206_10p_%ED%9A%A8%EC%84%B1%EC%A4%91%EA%B3%B5%EC%97%85.pdf",
+        "forward_per": 12.604516683597717
+      },
+      {
+        "name": "LS ELECTRIC",
+        "price_20261126": 113400,
+        "eps_2027_broker": 5117,
+        "broker_date": "2026-10-19",
+        "source": "https://imfnsec.tistory.com/124?category=856551",
+        "forward_per": 22.161422708618332
+      }
+    ],
+    "weight_hyosung": 0.7,
+    "weight_ls": 0.3,
+    "forward_per": 15.471588491103901,
+    "price": 386840.9508104997,
+    "warning": "Peer analyst estimates use differing methods, dates and business mixes; weights are judgement, not objectively calibrated. DCF, DDM and RIM share forecast."
+  }
+}

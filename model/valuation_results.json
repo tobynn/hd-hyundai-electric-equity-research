@@ -1,40 +1,21 @@
 {
-  "unit": "KRW billion except per-share values",
+  "status": "research scenarios, not a final target",
   "reference_price": 389500,
   "reference_date": "2026-11-26",
-  "economic_shares_million": 35.99,
+  "valuation_date": "2026-12-31 estimate",
   "DCF": {
-    "method": "FCFF DCF: power-equipment operating cash flow, separately bridged net cash",
-    "wacc": 0.09,
-    "terminal_growth": 0.022,
-    "terminal_reinvestment_roic": 0.14,
-    "terminal_nopat_2031": 1108.0344,
-    "terminal_fcff_2032": 954.4608,
-    "pv_explicit_fcff": 2963.7,
-    "pv_terminal_value": 9122.6,
-    "enterprise_value": 12086.2,
-    "net_cash": 648.574,
-    "non_controlling_interest": 4.028,
-    "equity_value": 12730.8,
-    "price": 353731
+    "price": 333117,
+    "wacc": 0.09494999999999999
   },
   "PER": {
-    "method": "two-stage payout model as of 2026 year-end; EPS is 2027E t1; observed peer average not used",
-    "normal_eps": 25000.0,
-    "applied_per": 10.955671,
-    "price": 273892
+    "price": 386841,
+    "method": "FY2027 peer weighting is analyst judgement"
   },
   "RIM": {
-    "method": "controlling equity with normalized residual-income path",
-    "begin_book_2026": 2550.0,
-    "cost_of_equity": 0.105,
-    "terminal_roe": 0.15,
-    "pv_explicit_ri": 2190.0,
-    "pv_terminal_ri": 1615.9,
-    "equity_value": 6355.9,
-    "price": 176602
+    "price": 181493,
+    "method": "earnings and dividend path reconciled to DDM"
   },
   "target_price": null,
   "rating": "under review",
-  "downside": null
+  "detail": "model/coherent_rebuild_20261127.json"
 }
