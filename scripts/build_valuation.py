@@ -87,8 +87,8 @@ rim_price = rim_equity * 1_000_000_000 / (shares_m * 1_000_000)
 
 values = {
     "unit": "KRW billion except per-share values",
-    "reference_price": 400000,
-    "reference_date": "2026-11-24",
+    "reference_price": 389500,
+    "reference_date": "2026-11-26",
     "economic_shares_million": shares_m,
     "DCF": {
         "method": "FCFF DCF: power-equipment operating cash flow, separately bridged net cash",

@@ -1,0 +1,4 @@
+name,ticker,close,fy2025_eps,nine_m_2026_eps,nine_m_2025_eps,split_factor,role,earnings_source,price_source,date,ttm_eps_approx,ttm_per_approx
+HD현대일렉트릭,267260,389500,20354,16613,13547,1,대상기업,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116001028,https://totalstock.irplus.co.kr/StockService/page/267260_hyundaielectric_0852/dailystock.php?getday=66&l=K,2026-11-26,23420.0,16.63
+효성중공업,298040,1613000,55832,51489,37038,1,직접 비교·건설 포함,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113001360,https://markets.hankyung.com/stock/298040/chart,2026-11-26,70283.0,22.95
+LS ELECTRIC,010120,113400,9647,2556,1369,5,부분 비교·자동화 포함,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116002011,https://markets.hankyung.com/stock/010120/chart,2026-11-26,3116.4,36.39

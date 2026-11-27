@@ -1,0 +1,50 @@
+{
+  "status": "research only; TTM approximate; not a target multiple",
+  "rows": [
+    {
+      "name": "HD현대일렉트릭",
+      "ticker": "267260",
+      "close": 389500,
+      "fy2025_eps": 20354,
+      "nine_m_2026_eps": 16613,
+      "nine_m_2025_eps": 13547,
+      "split_factor": 1,
+      "role": "대상기업",
+      "earnings_source": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116001028",
+      "price_source": "https://totalstock.irplus.co.kr/StockService/page/267260_hyundaielectric_0852/dailystock.php?getday=66&l=K",
+      "date": "2026-11-26",
+      "ttm_eps_approx": 23420.0,
+      "ttm_per_approx": 16.63
+    },
+    {
+      "name": "효성중공업",
+      "ticker": "298040",
+      "close": 1613000,
+      "fy2025_eps": 55832,
+      "nine_m_2026_eps": 51489,
+      "nine_m_2025_eps": 37038,
+      "split_factor": 1,
+      "role": "직접 비교·건설 포함",
+      "earnings_source": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113001360",
+      "price_source": "https://markets.hankyung.com/stock/298040/chart",
+      "date": "2026-11-26",
+      "ttm_eps_approx": 70283.0,
+      "ttm_per_approx": 22.95
+    },
+    {
+      "name": "LS ELECTRIC",
+      "ticker": "010120",
+      "close": 113400,
+      "fy2025_eps": 9647,
+      "nine_m_2026_eps": 2556,
+      "nine_m_2025_eps": 1369,
+      "split_factor": 5,
+      "role": "부분 비교·자동화 포함",
+      "earnings_source": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116002011",
+      "price_source": "https://markets.hankyung.com/stock/010120/chart",
+      "date": "2026-11-26",
+      "ttm_eps_approx": 3116.4,
+      "ttm_per_approx": 36.39
+    }
+  ]
+}
