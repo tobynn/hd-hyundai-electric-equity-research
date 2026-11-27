@@ -1,21 +1,31 @@
 {
-  "status": "research scenarios, not a final target",
+  "status": "conditional analyst valuation; earnings, cash flows and comparables are estimates",
   "reference_price": 389500,
   "reference_date": "2026-11-26",
   "valuation_date": "2026-12-31 estimate",
+  "horizon": "2026-12-31; approximately one month from 2026-11-26",
   "DCF": {
     "price": 333117,
-    "wacc": 0.09494999999999999
+    "wacc": 0.09494999999999999,
+    "terminal_growth": 0.022
   },
   "PER": {
     "price": 386841,
-    "method": "FY2027 peer weighting is analyst judgement"
+    "method": "FY2027 70% Hyosung + 30% LS, weights are analyst judgement"
   },
   "RIM": {
     "price": 181493,
-    "method": "earnings and dividend path reconciled to DDM"
+    "method": "residual income and dividend discount share same earnings and payout path"
   },
-  "target_price": null,
-  "rating": "under review",
-  "detail": "model/coherent_rebuild_20261127.json"
+  "target_price": 333000,
+  "rating": "HOLD",
+  "upside_price_only": -0.1450577663671374,
+  "rating_rule": "price-only upside >=15% BUY, <=-15% SELL, otherwise HOLD; horizon 2026-12-31, not 12 months",
+  "detail": "model/coherent_rebuild_20261127.json",
+  "warnings": [
+    "Year-end book and net cash are estimates; Q4 nonoperating and debt movements set to zero.",
+    "DCF and RIM imply different steady-state returns and transitions and do not reconcile as identical economics.",
+    "Peer estimates from different brokers and dates, LS estimate predates Q3 results; 70:30 weight is judgement.",
+    "3Q cash and NCI adjusted on an assumed bridge; actual year-end amounts can differ."
+  ]
 }

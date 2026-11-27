@@ -44,7 +44,7 @@ out={'status':'research scenarios; forecasts and peer weights are judgements; no
 outdir=root/'model';outdir.mkdir(exist_ok=True)
 (outdir/'coherent_rebuild_20261127.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n')
 summary={'status':'research scenarios, not a final target','reference_price':price,'reference_date':'2026-11-26','valuation_date':'2026-12-31 estimate','DCF':{'price':round(dcf_equity*1e9/shares),'wacc':wacc},'PER':{'price':round(eps27*weighted),'method':'FY2027 peer weighting is analyst judgement'},'RIM':{'price':round(rim_equity*1e9/shares),'method':'earnings and dividend path reconciled to DDM'},'target_price':None,'rating':'under review','detail':'model/coherent_rebuild_20261127.json'}
-(outdir/'valuation_results.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n')
+(outdir/'valuation_results_interim_20261127.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n')
 with (outdir/'coherent_forecast_20261127.csv').open('w',encoding='utf-8',newline='') as f:
     writer=csv.DictWriter(f,fieldnames=rows[0]);writer.writeheader();writer.writerows(rows)
 print(json.dumps({'wacc':wacc,'q4':out['q4_bridge'],'dcf':out['dcf'],'rim':out['rim'],'per':out['per']},ensure_ascii=False,indent=2))
